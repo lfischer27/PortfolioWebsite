@@ -1,0 +1,95 @@
+.gallery {
+    margin-left: 5em;
+    margin-left: 3m;
+}
+
+.gallery img {
+    width: 20em;
+    padding: .3em;
+    transition: .5s;
+    height: 20em;
+    width: 20em;  
+}
+
+.gallery img:hover{
+    transform: scale(1.07);
+}
+
+/*dropdown button formatting*/
+.dropbtn {
+  background-color: goldenrod;
+  color: white;
+  padding: .7em;
+  font: 1em Georgia, "Times New Roman";
+  border: none;
+  border-radius: .4em;
+}
+
+/*formats positing and sizing abilities of the dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 3em;
+/*  margin-top: 1.5em;*/
+  margin-bottom: 2em;
+}
+
+/*dropdown menu elements*/
+.dropdown-content {
+/*hides dropdown menu*/
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
+/*sets stack order*/
+  z-index: 1;
+  font: 1em Georgia, "Times New Roman";
+}
+
+/*formats links in dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: .6em;
+  text-decoration: none;
+/*displays as block element*/
+  display: block;
+  font-family: Georgia, "Times New Roman";
+}
+
+/*when the user hovers over the dropdown options*/
+.dropdown-content a:hover {
+    background-color: goldenrod;
+}
+
+.dropdown-content a:link {
+    color: black;
+}
+
+.dropdown-content a:visited {
+    color: black;
+}
+
+/*displays the dropdown menu when the button is hovered over*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*changes button color when hovered over*/
+.dropdown:hover .dropbtn {
+    background-color: darkgoldenrod;
+}
+
+
+h1 {
+	font: 3.5em Georgia, "Times New Roman";
+	margin-bottom: .2em;
+    color: steelblue;
+    padding-bottom: .2em;
+    text-align: center;
+    font-weight: normal;
+}
+
+/*lightbox source code - https://github.com/lokesh/lightbox2*/
+/*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/

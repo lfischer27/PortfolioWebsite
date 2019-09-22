@@ -1,0 +1,161 @@
+/*controls size of the page*/
+html {
+max-height: 300px;
+height: 300px;
+}
+
+/*parallax scrolling*/
+.parallax {
+/*    sets image and size*/
+  background-image: url("../images/farm3.jpg");
+  min-height: 500px; 
+  max-height: 500px;
+/*keeps the image fixed (still, in one place) on the screen*/
+  background-attachment: fixed;
+/*    centers the image*/
+  background-position: center;
+/*    single image*/
+  background-repeat: no-repeat;
+/*    fills the space*/
+  background-size: cover;
+}
+   
+/*dropdown button formatting*/
+.dropbtn {
+  background-color: goldenrod;
+  color: white;
+  padding: .7em;
+  font: 1em Georgia, "Times New Roman";
+  border: none;
+  border-radius: .4em;
+}
+
+/*formats positing and sizing abilities of the dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+/*dropdown menu elements*/
+.dropdown-content {
+/*hides dropdown menu*/
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
+/*sets stack order*/
+  z-index: 1;
+  font: 1em Georgia, "Times New Roman";
+}
+
+/*formats links in dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: .6em;
+  text-decoration: none;
+/*displays as block element*/
+  display: block;
+  font-family: Georgia, "Times New Roman";
+}
+
+/*when the user hovers over the dropdown options*/
+.dropdown-content a:hover {
+    background-color: goldenrod;
+}
+
+.dropdown-content a:link {
+    color: black;
+}
+
+.dropdown-content a:visited {
+    color: black;
+}
+
+/*displays the dropdown menu when the button is hovered over*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*changes button color when hovered over*/
+.dropdown:hover .dropbtn {
+    background-color: darkgoldenrod;
+}
+    
+.centered {
+  color:white;
+  font: 3em Georgia, "Times New Roman";
+  position: absolute;
+/*postions the text so that it is centered on the parallax scrolling*/
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+h1 {
+    margin-top: 2em;
+    text-emphasis: none;
+}
+h2, h3, p {
+    font-family: Georgia, "Times New Roman";
+}
+
+h3, p {
+    margin-left: 3em;
+}
+
+h2{
+    color: steelblue;
+    font-size: 3.5em;
+    font-style: normal;
+    text-align: center;
+}  
+
+h3 {
+    color: black;
+    font-size: 2em;
+/*    font-weight: bold;*/
+    color: goldenrod;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: medium;
+}
+
+/*formats size, shape, and border of image*/
+img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 1em;
+    margin-bottom: 0em;
+    margin-left: .2em;
+    margin-top: 0em;
+}
+
+/*provides inner background to the text*/
+.content{
+    margin-bottom: 6em;
+}
+
+/*removes margins*/
+body {
+    margin: 0em;
+}
+
+a:link {
+    color: steelblue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+/*Parallax scrolling refrence https://www.w3schools.com/howto/howto_css_parallax.asp*/
+/*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/

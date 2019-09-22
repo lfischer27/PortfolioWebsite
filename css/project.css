@@ -1,0 +1,146 @@
+html {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 5%;
+	line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+h2 {
+	font: 2em Georgia, "Times New Roman";
+	margin-bottom: .4em;
+	color: goldenrod;
+}
+
+h1 {
+	font: 3.5em Georgia, "Times New Roman";
+	margin-bottom: .2em;
+    color: steelblue;
+    padding-bottom: .2em;
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.project {
+    border-bottom: .05em solid steelblue;
+    width: 40%;
+}
+
+li {
+	margin-bottom: 1em;
+    font-family: Georgia, "Times New Roman";
+    color: black;
+    margin: 1.5em;
+    font-size: 1.2em;
+}
+
+/*dropdown button formatting*/
+.dropbtn {
+  background-color: goldenrod;
+  color: white;
+  padding: .7em;
+  font: 1em Georgia, "Times New Roman";
+  border: none;
+  border-radius: .4em;
+}
+
+/*formats positing and sizing abilities of the dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+
+/*dropdown menu elements*/
+.dropdown-content {
+/*hides dropdown menu*/
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
+/*sets stack order*/
+  z-index: 1;
+  font: 1em Georgia, "Times New Roman";
+}
+
+/*formats links in dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: .6em;
+  text-decoration: none;
+/*displays as block element*/
+  display: block;
+  font-family: Georgia, "Times New Roman";
+}
+
+/*when the user hovers over the dropdown options*/
+.dropdown-content a:hover {
+    background-color: goldenrod;
+}
+
+.dropdown-content a:link {
+    color: black;
+}
+
+.dropdown-content a:visited {
+    color: black;
+}
+
+/*displays the dropdown menu when the button is hovered over*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*changes button color when hovered over*/
+.dropdown:hover .dropbtn {
+    background-color: darkgoldenrod;
+}
+
+img {
+    float: right;
+    width: 30%;
+    height: 30%;
+    margin-left: 2em;
+}
+
+.smaller {
+    width:20%;
+    height:20%;
+    margin-left: 2em;
+}
+
+a:link {
+    color: steelblue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+.dropdown-content a:link {
+    color: black;
+}
+
+.dropdown-content a:visited {
+    color: black;
+}
+
+/*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/
