@@ -142,6 +142,10 @@ img {
     margin-bottom: 2em;
 }
 
+.fish {
+    border: 1px solid black;
+}
+
 a:link {
     color: steelblue;
 }
