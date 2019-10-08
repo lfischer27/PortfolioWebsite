@@ -1,5 +1,7 @@
 var slideIndex = 0;
+var slideIndexv2 = 0;
 showSlides();
+showSlides2();
 
 function showSlides() {
   var i;
@@ -11,6 +13,18 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}    
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 2500);
+}
+
+function showSlides2() {
+  var i;
+  var slides = document.getElementsByClassName("mayaSlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndexv2++;
+  if (slideIndexv2 > slides.length) {slideIndexv2 = 1}    
+  slides[slideIndexv2-1].style.display = "block";  
+  setTimeout(showSlides2, 2500);
 }
 
 //refrence: https://www.w3schools.com/howto/howto_js_slideshow.asp

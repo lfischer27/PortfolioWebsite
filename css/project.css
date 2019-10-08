@@ -43,6 +43,7 @@ p {
 
 li {
 	margin-bottom: 1em;
+    margin-right: 1.5em;
     font-family: Georgia, "Times New Roman";
     color: black;
     margin: 1.5em;
@@ -125,6 +126,20 @@ img {
     width:20%;
     height:20%;
     margin-left: 2em;
+}
+
+.maya {
+    height:10em;
+    width: 10em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.rocket {
+    height:12em;
+    width: 10em;
+    margin-left: 2em;
+    margin-bottom: 2em;
 }
 
 a:link {
