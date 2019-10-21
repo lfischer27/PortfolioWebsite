@@ -143,13 +143,13 @@ img {
     margin-bottom: 2em;
 }
 
-.prjs {
-    
-}
-
 .fish, .duck {
     border: 1px solid black;
     margin-bottom: 4em;
+}
+
+.Mon {
+    margin-bottom: 2em;
 }
 
 a:link {
