@@ -143,7 +143,7 @@ img {
     margin-bottom: 2em;
 }
 
-.fish, .duck {
+.fish, .duck, .space {
     border: 1px solid black;
     margin-bottom: 4em;
 }
