@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <!--Sets the viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +7,31 @@
     <meta charset="utf-8">
     <title>Lauren Fischer</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="scripts/project.js" type="text/javascript" defer></script>
 </head>
     
 <body>
     <!--    for parallax scrolling and text layered on top-->
     <div class="parallax"><div class="centered"> <header role="banner"> <h1>Lauren Fischer</h1> </header></div></div>
       <div class="background">
-    <!--       dropdown menu section-->
+          <!-- dropdown menu section -->
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="dropdownlink">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Art Gallery</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="demo.html">Demo Reel</a>
+                </div>
+          </div>
+          <div class="buttons">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu">&#9776; </span>
+          </div>  
+    <!--       end of dropdown menu material-->
+       
+<!--old dropdown button-->
+<!--
         <div class="dropdown">
          <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
@@ -27,7 +44,7 @@
             </nav>
           </div>
         </div> 
-    <!--       end of dropdown menu material-->
+-->
     <!--main content of the page-->
         <div class="content">
             <h2>Student, Programmer, Artist</h2><br>

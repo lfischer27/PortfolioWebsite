@@ -25,7 +25,8 @@ height: 300px;
   background-color: goldenrod;
   color: white;
   padding: .7em;
-  font: 1em Georgia, "Times New Roman";
+/*  font: 1em Georgia, "Times New Roman";*/
+  font-family: Tahoma, Arial, sans-serif;
   border: none;
   border-radius: .4em;
 }
@@ -49,7 +50,8 @@ height: 300px;
   box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
 /*sets stack order*/
   z-index: 1;
-  font: 1em Georgia, "Times New Roman";
+/*  font: 1em Georgia, "Times New Roman";*/
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 /*formats links in dropdown*/
@@ -59,7 +61,8 @@ height: 300px;
   text-decoration: none;
 /*displays as block element*/
   display: block;
-  font-family: Georgia, "Times New Roman";
+/*  font-family: Georgia, "Times New Roman";*/
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 /*when the user hovers over the dropdown options*/
@@ -87,6 +90,7 @@ height: 300px;
     
 .centered {
   color:white;
+/*    luminari*/
   font: 3em Georgia, "Times New Roman";
   position: absolute;
 /*postions the text so that it is centered on the parallax scrolling*/
@@ -100,7 +104,9 @@ h1 {
     text-emphasis: none;
 }
 h2, h3, p {
-    font-family: Georgia, "Times New Roman";
+    /*arial  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TAHOMA*/
+/*    font-family: Georgia, "Times New Roman";*/
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 h3, p {
@@ -157,5 +163,73 @@ a:visited {
     color: darkblue;
 }
 
+
+/* The side navigation menu */
+.sidenav {
+  font-family: Tahoma, Arial, sans-serif;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Color change with hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+/*  color: white;*/
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.buttons {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.menu {
+    color: steelblue;
+}
+
 /*Parallax scrolling refrence https://www.w3schools.com/howto/howto_css_parallax.asp*/
 /*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/
+/*responsive menu refrence - https://www.w3schools.com/howto/howto_css_responsive_header.asp*/
+/*updated dropdown menu refrences*/
+/*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+/*https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+/*https://www.w3schools.com/howto/howto_css_menu_icon.asp*/

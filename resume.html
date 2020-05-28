@@ -1,18 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="en">
     
-<head>
-<meta charset="utf-8">
-<title>Resume</title>
-<link href="css/resume.css" rel="stylesheet" type="text/css">
-</head>
+<div class="header">
+    <div class="centered">
+        <a href="index.html" class="logo"> Lauren Fischer</a>
+    </div>
+    <div class="header-right">
+     <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="dropdownlink">
+             <a href="index.html">Home</a>
+             <a href="gallery.html">Art Gallery</a>
+             <a href="resume.html">Resume</a>
+             <a href="projects.html">Projects</a>
+             <a href="demo.html">Demo Reel</a>
+         </div>
+     </div>
+
+<!-- Use any element to open the sidenav -->
+<!--<span onclick="openNav()">open</span>-->
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu">&#9776; </span>
+    </div>
+</div> 
     
-<body>
- <main role="main">
-     <header role="banner">
-        <h1>Resume</h1>
-     </header>
-     <article role="article">
+<div class="bodyrepl">
+    <head>
+        <meta charset="utf-8">
+        <title>Resume</title>
+        <link href="css/resume.css" rel="stylesheet" type="text/css">
+        <script src="scripts/project.js" type="text/javascript" defer></script>
+    </head>
+    
+    <body>
+        <main role="main">
+            <header role="banner">
+                <h1>Resume</h1> <br>
+            </header>
+            <article role="article">
+<!--
         <div class="dropdown">
          <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
@@ -25,6 +50,7 @@
             </nav>
           </div>
         </div> 
+-->
 <!--            Education Section-->
                 <h2>Education</h2>
                     <ul>
@@ -40,7 +66,8 @@
                             <ul>
                                 <li>2014-2018</li>
                                 <li>Graduated Summa Cum Laude</li>
-                            </ul> 
+                            </ul>
+                        </li>
                     </ul>
 <!--            work experience section-->
                 <h2>Work Experience</h2>
@@ -72,6 +99,7 @@
                             <ul>
                                 <li>Maya, Git, GitHub, Blender, A-Frame (Virtual Reality Framework), IntelliJ, Sublime Text, Eclipse, Adobe Photoshop, Adobe Illustrator, Adobe Premier Pro, Adobe Acrobat, Brackets, Visual Studio Code, Android Studio, Node.js, Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Microsoft Outlook</li>
                             </ul>
+                        </li>
                         <li><h3>Languages</h3>
                             <ul>
                                 <li>HTML, C, CSS, C++, Python, JavaScript, Processing, proficient in Java</li>
@@ -184,4 +212,5 @@
 </article>
 </main>
 </body>
+    </div>
 </html>

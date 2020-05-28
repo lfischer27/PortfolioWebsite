@@ -1,17 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="en">
     
-<head>
-<meta charset="utf-8">
-<title>Projects</title>
-<link href="css/project.css" rel="stylesheet" type="text/css">
-<script src="scripts/project.js" type="text/javascript" defer></script>
-</head>
-    
-<body>
-    <header role="banner">
-        <h1>Projects</h1>
-    </header>
+<div class="header">
+    <div class="centered">
+        <a href="index.html" class="logo"> Lauren Fischer</a>
+    </div>
+    <div class="header-right">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="dropdownlink">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Art Gallery</a>
+                <a href="resume.html">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="demo.html">Demo Reel</a>
+            </div>
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <!--<span onclick="openNav()">open</span>-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu">&#9776; </span>
+    </div>
+</div> 
+      
+<div class="bodyrepl">  
+    <head>
+        <meta charset="utf-8">
+        <title>Projects</title>
+        <link href="css/project.css" rel="stylesheet" type="text/css">
+        <script src="scripts/project.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+        <header role="banner">
+            <h1>Projects</h1>
+        </header>
+<!--
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
@@ -24,20 +47,22 @@
                 </nav>
             </div>
     </div> 
-    <main role="main">
-        <article role="article">
-            <h2><div class="project">Ray Tracer</div><div class="slideshow-container">
-                    <div class="ray">
-                        <img class="RayTracer" src="images/p09.png" width="500" height="500" alt="Ray Tracer">
+-->
+        <main role="main">
+            <article role="article">
+                <h2><div class="project">Ray Tracer</div>
+                    <div class="slideshow-container">
+                        <div class="ray">
+                            <img class="RayTracer" src="images/p09.png" width="500" height="500" alt="Ray Tracer">
+                        </div>
+                        <div class="ray">
+                            <img class="RayTracer" src="images/p10.png" width="500" height="500" alt="Ray Tracer">
+                        </div>
+                        <div class="ray">
+                            <img class="RayTracer" src="images/p11.png" width="500" height="500" alt="Ray Tracer">
+                        </div>
                     </div>
-                    <div class="ray">
-                        <img class="RayTracer" src="images/p10.png" width="500" height="500" alt="Ray Tracer">
-                    </div>
-                    <div class="ray">
-                        <img class="RayTracer" src="images/p11.png" width="500" height="500" alt="Ray Tracer">
-                    </div>
-                </div>
-            </h2>
+                </h2>
                 <ul>
                     <li>Created for CS 3451 (Computer Graphics)</li>
                     <li>Ray Tracer that deals specifically with rendering disks and ellipsoids.</li>
@@ -45,8 +70,8 @@
                     <li>Different scenes rendered when upon pressing keys 1-9, 0, and -.</li>
                     <li>Download <a href="projects/ray_tracer.zip" download>here</a></li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">3D Model and Animation of R2D2</div><img src="images/r2d2.PNG" width="802" height="800" alt="R2D2"></h2>
+                <br> <br>
+                <h2><div class="project">3D Model and Animation of R2D2</div><img src="images/r2d2.PNG" width="802" height="800" alt="R2D2"></h2>
                 <ul>
                     <li>Created for CS 3451 (Computer Graphics)</li>
                     <li>3D model of R2D2 from Star Wars created in Processing. I then used this model to create a 
@@ -54,23 +79,24 @@
                     <li>Download model <a href="projects/p2a_my_object.zip" download>here</a></li>
                     <li>Download scene <a href="projects/scene.zip" download>here</a></li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Paper Football Game</div><img src="images/paper_football.png" width="1920" height="1080" alt="Paper Football"></h2>
+                <br> <br>
+                <h2><div class="project">Paper Football Game</div><img src="images/paper_football.png" width="1920" height="1080" alt="Paper Football"></h2>
                 <ul>
                     <li>2019 Horizons Hackathon/Make-a-thon </li>
                     <li>Created game in Unity that pairs with a leap motion controller allowing the user to play a virtual take on the traditional paper football game</li>
                     <li>Download <a href="projects/paperFootball.zip" download>here</a></li>
                 </ul>
-            <br>
+                <br>
                 <img class= "smaller" src="images/Space_Traders3.PNG" width="367" height="645" alt="Space Traders" hspace="60" vspace="20"> <br> <br>
-            <h2><div class="project">Space Traders Android App</div></h2>
+                <h2><div class="project">Space Traders Android App</div></h2>
                 <ul>
                     <li>Created for CS 2340 (Objects and Design) 2019 utilizing Agile methodology</li>
                     <li>Developed application in Android Studio allowing players to travel from planet to planet to buy low and sell high </li>
                     <li>Download <a href="projects/Space%20Traders.zip" download>here</a></li>
                 </ul>
-            <br> <br> <br> <br> <br>
-            <h2><div class="project">Maya Projects</div>
+                <br> <br> <br> <br> <br>
+                <h2>
+                <div class="project">Maya Projects</div>
                 <div class="slideshow-container">
                     <div class="mayaSlides">
                         <img class= "tall" src="images/Vase.PNG" width="286" height="448" alt="Maya Vase">
@@ -91,87 +117,91 @@
                         <img class= "maya" src="images/Zelda.PNG" width="645" height="586" alt="Maya Walk">
                     </div>
                 </div>
-            </h2>
+                </h2>
                 <ul>
                     <li>Pieces created on own time and often in coordination with extracurricular classes to model different objects and animate characters in Maya</li>
                     <li>Currently working on enhancing modeling, rigging, and animating skills through <nobr>self-driven</nobr> extracurricular study</li>
                     <li>Download <a href="projects/rocket.mb">rocket</a>, <a href="projects/pencil.mb">pencil</a>, <a href="projects/Gear.mb">gear</a>, <a href="projects/Vase.mb">vase</a>, <a href="projects/Maya%20Animation.zip">mini walk/emote animation</a>, <a href="projects/Zelda.zip">walk cycle</a></li>
                 </ul>
-            <br> <br> <br> <br> <br> <br> <br>
-             <h2><div class="project">Bezier Patches</div><div class="slideshow-container">
-                    <div class="patch">
-                        <img class="BezierPatches" src="images/elephant.JPG" width="751" height="746" alt="Bezier Patches">
+                <br> <br> <br> <br> <br> <br> <br>
+                <h2>
+                    <div class="project">Bezier Patches</div>
+                    <div class="slideshow-container">
+                        <div class="patch">
+                            <img class="BezierPatches" src="images/elephant.JPG" width="751" height="746" alt="Bezier Patches">
+                        </div>
+                        <div class="patch">
+                            <img class="BezierPatches" src="images/elephant2.JPG" width="750" height="749" alt="Bezier Patches">
+                        </div>
+                        <div class="patch">
+                            <img class="BezierPatches" src="images/elephant3.JPG" width="750" height="746" alt="Bezier Patches">
+                        </div>
+                        <div class="patch">
+                            <img class="BezierPatches" src="images/elephant4.JPG" width="750" height="746" alt="Bezier Patches">
+                        </div>
                     </div>
-                    <div class="patch">
-                        <img class="BezierPatches" src="images/elephant2.JPG" width="750" height="749" alt="Bezier Patches">
-                    </div>
-                    <div class="patch">
-                        <img class="BezierPatches" src="images/elephant3.JPG" width="750" height="746" alt="Bezier Patches">
-                    </div>
-                    <div class="patch">
-                        <img class="BezierPatches" src="images/elephant4.JPG" width="750" height="746" alt="Bezier Patches">
-                    </div>
-                </div></h2>
+                </h2>
                 <ul>
                     <li>Created for CS 3451 (Computer Graphics)</li>
                     <li>Program in Processing that reads in control points for Bezier patches and creates collections of polygons from this information; able to toggle between displaying the control points and showing detailed curved surfaces.</li>
-                    <li>keystroke commands: <b>1-4:</b> Read in a Bezier patch (one patch, sphere, teapot, elephant), <b>a:</b> Show a patch as line drawing of a single quadrilateral, using the corner control points, <b>s:</b> Show each patch as lines for nine quadrilaterals, using all 16 control points, <b>d:</b> Show each patch as a detailed collection of solid polygons (10 x 10 points), <b>r:</b> Toggle between white and randomly colored faces, <b>space:</b> Toggle automatic rotation on and off.
-</li>
+                    <li>keystroke commands: <b>1-4:</b> Read in a Bezier patch (one patch, sphere, teapot, elephant), <b>a:</b> Show a patch as line drawing of a single quadrilateral, using the corner control points, <b>s:</b> Show each patch as lines for nine quadrilaterals, using all 16 control points, <b>d:</b> Show each patch as a detailed collection of solid polygons (10 x 10 points), <b>r:</b> Toggle between white and randomly colored faces, <b>space:</b> Toggle automatic rotation on and off.</li>
                     <li>Download <a href="projects/bezier_patches.zip" download>here</a></li>
                 </ul>
-            <br>
-            <h2><div class="project">GPU Programming</div><img src="images/gpu.JPG" width="568" height="520" alt="GPU"></h2>
+                <br>
+                <h2><div class="project">GPU Programming</div><img src="images/gpu.JPG" width="568" height="520" alt="GPU"></h2>
                 <ul>
                     <li>Created for CS 3451 (Computer Graphics)</li>
                     <li>use the GPU (vertex and fragment processors) to carry out various rendering tasks: modifying a translucent blue polygon so that it looks like eight translucent circles (by modifying the alpha value on a per-fragment basis, using a fragment program), performing edge detection of an image (using a GLSL fragment program to perform a number of texture lookups in order to calculate the Laplacian at each texture coordinate position, and modify the geometry of a collection of polygons (using a vertex program) subdividing the original quad and displacing vertices along the normal vector using the intensity of the closest texel to the vertex from the provided bump image.
                     </li>
                     <li>Download <a href="projects/p4_gpu.zip" download>here</a></li>
                 </ul>
-            <br>
-            <img class= "smaller" src="images/Squares.PNG" width="596" height="591" alt="Squares" hspace="60" vspace="20"> <br> <br>
-            <h2><div class="project">Moving Squares in Processing</div></h2>
+                <br>
+                <img class= "smaller" src="images/Squares.PNG" width="596" height="591" alt="Squares" hspace="60" vspace="20"> <br> <br>
+                <h2><div class="project">Moving Squares in Processing</div></h2>
                 <ul>
                     <li>Created for CS 3451 (Computer Graphics)</li>
                     <li>Interactive Processing project in which layers of various sized squares are rotationally symmetric around a middle square. The position of the squares changes based of the position of the mouse.</li>
                     <li>Download <a href="projects/Squares.pde" download>here</a></li>
                 </ul>
-            <br> <br> <br> <br>
-            <h2><div class="project">3D Mondrian Piece</div>
-                <div class="slideshow-container">
-                    <div class="mySlides">
+                <br> <br> <br> <br>
+                <h2>
+                    <div class="project">3D Mondrian Piece</div>
+                    <div class="slideshow-container">
+                        <div class="mySlides">
                         <img class="Mon" src="images/Mondrian.PNG" width="741" height="570" alt="3D Mondrian">
+                        </div>
+                        <div class="mySlides">
+                            <img class="Mon extra" src="images/MondrianSide.PNG" width="1155" height="784" alt="3D Mondrian Side">
+                        </div>
+                        <div class="mySlides">
+                            <img class="Mon" src="images/MovingMondrian.PNG" width="655" height="549" alt="Animated 3D Mondrian">
+                        </div>
                     </div>
-                    <div class="mySlides">
-                        <img class="Mon extra" src="images/MondrianSide.PNG" width="1155" height="784" alt="3D Mondrian Side">
-                    </div>
-                    <div class="mySlides">
-                        <img class="Mon" src="images/MovingMondrian.PNG" width="655" height="549" alt="Animated 3D Mondrian">
-                    </div>
-                </div>
-            </h2>
+                </h2>
                 <ul>
                     <li>Developed in A-Frame as a 3D interpretation of an iconic Mondrian Painting</li>
                     <li>There are several versions: one that allows the viewer to walk freely around the still piece, a version where you can click on the different elements to change their colors (several of the piece "breathe" in and out), an animated version where the pieces rotate in and out of place, another rotating animated version where the camera also rotates, and a version where the colors transition</li>
                     <li>View <a href="https://lfischer27.github.io/A_Frame_Mondrian/">still version</a>, <a href="https://lfischer27.github.io/A_Frame_Moving_Mondrian/">animated version</a>, <a href="https://lfischer27.github.io/MondrianInteractive/">interactive version</a>, <a href="https://lfischer27.github.io/Mondrain_Changing_Color/">auto color transition version</a>, <a href="https://lfischer27.github.io/Mondrian_Rotating_Camera/">rotating camera version</a></li>
                     <li>View <a href="https://github.com/lfischer27/A_Frame_Mondrian/blob/master/index.html">still version code</a>, <a href="https://github.com/lfischer27/A_Frame_Moving_Mondrian/blob/master/index.html">animated version code</a>, <a href="https://github.com/lfischer27/MondrianInteractive/blob/master/index.html">interactive version code</a>, <a href="https://github.com/lfischer27/Mondrain_Changing_Color/blob/master/index.html">auto color version code</a>, <a href="https://github.com/lfischer27/Mondrian_Rotating_Camera/blob/master/index.html">rotating camera version code</a></li>
                 </ul>
-            <br>
-            <h2><div class="project">Game Boy Advance Computer Games</div>
-                <div class="slideshow-container">
-                    <div class="GBA">
-                        <img class= "fish" src="images/FishGame.PNG" width="713" height="535" alt="Fish Game">
+                <br>
+                <h2>
+                    <div class="project">Game Boy Advance Computer Games</div>
+                    <div class="slideshow-container">
+                        <div class="GBA">
+                            <img class= "fish" src="images/FishGame.PNG" width="713" height="535" alt="Fish Game">
+                        </div>
+                        <div class="GBA">
+                            <img class= "duck" src="images/duckGame2.png" width="720" height="541" alt="Duck Game">
+                        </div>
+                        <div class="GBA">
+                            <img class= "space" src="images/spaceInvaders.PNG" width="718" height="535" alt="Space Invaders">    
+                        </div>
+                        <div class="GBA">
+                            <img class= "space" src="images/TourOfMordor.PNG" width="721" height="545" alt="A Tour of Mordor">    
+                        </div>
                     </div>
-                    <div class="GBA">
-                        <img class= "duck" src="images/duckGame2.png" width="720" height="541" alt="Duck Game">
-                    </div>
-                    <div class="GBA">
-                        <img class= "space" src="images/spaceInvaders.PNG" width="718" height="535" alt="Space Invaders">    
-                    </div>
-                    <div class="GBA">
-                        <img class= "space" src="images/TourOfMordor.PNG" width="721" height="545" alt="A Tour of Mordor">    
-                    </div>
-                </div>
-            </h2>
+                </h2>
                 <ul>
                     <li>Games developed in C for the Game Boy Advance using Visual Studio Code</li>
                     <li>Produced as homework assignments and labs for CS 2261 (Media Device Architecture)</li>
@@ -180,36 +210,36 @@
                     <li><a href="projects/HW06_LaurenFischer.zip" download>Space Invaders Game</a>: left and right arrow keys move the player (Millennium Falcon), player can shoot by pressing the A button, defeat all of the invading ships (TIE Fighters) to win, you have 5 lives so be careful not to get hit or it is game over.</li>
                     <li><a href="projects/FinalGame_LaurenFischer.zip" download>A Tour of Mordor</a>: a Lord of the Rings inspired game. Play as Frodo, avoiding orcs, the Eye of Sauron, and Gollum in order to get through Mordor to its center where you can throw the One Ring in the lava and save Middle Earth. Use the One Ring to hide and Sting to defend yourself!</li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Speculative Self-Brand Identity</div><img src="images/brandIdentity.PNG" width="424" height="275" alt="Brand Identity"></h2>
+                <br> <br>
+                <h2><div class="project">Speculative Self-Brand Identity</div><img src="images/brandIdentity.PNG" width="424" height="275" alt="Brand Identity"></h2>
                 <ul>
                     <li>Created brand guidelines and style guide for a potential animation company called "Fish" including logos, typography, color palette, and more.</li>
                     <li>Download pdf <a href="projects/FischerBrandIdentity.pdf" download>here</a></li>
                     <li>Created for LMC 2720 (Principles of Visual Design)</li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Data Structures and Algorithms (Java)</div><img src="images/DataStruct.PNG" width="590" height="326" alt="Java Code"></h2>
+                <br> <br>
+                <h2><div class="project">Data Structures and Algorithms (Java)</div><img src="images/DataStruct.PNG" width="590" height="326" alt="Java Code"></h2>
                 <ul>
                     <li>Created data structures and algorithms in Java (using IntelliJ as an IDE) using JUnit tests to test finished code</li>
                     <li>Created <a href="projects/homework1.zip" download>ArrayLists</a>, <a href="projects/hw2.zip" download> Circular Singly-Linked Lists</a>, <a href="projects/Homework3.zip" download>Stacks and Queues</a>, <a href="projects/HW4.zip" download>Binary Search Trees</a>, <a href="projects/HW5.zip" download>Heaps</a>, <a href="projects/HW6.zip" download>HashMaps</a>, <a href="projects/HW7.zip" download>AVL Trees</a>, <a href="projects/HW8.zip" download>Sorting Algorithms</a>, <a href="projects/HW9.zip" download>Pattern Matching</a>, and <a href="projects/HW10.zip" download>Graph Algorithms</a></li>
                     <li>Created for CS 1332 (Data Structures and Algorithms)</li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Twitter Bot</div><img src="images/TwitterBot.PNG" width="751" height="455" alt="Politician Fashionista" class="twitter"></h2>
+                <br> <br>
+                <h2><div class="project">Twitter Bot</div><img src="images/TwitterBot.PNG" width="751" height="455" alt="Politician Fashionista" class="twitter"></h2>
                 <ul>
                     <li>Created using Twitter account linked with JavaScript files to address how women in politics are judged upon their appearance rather than their actual political stances. This bot searches for tweets that include a hashtag of a male politician, then retweets it with a message that @s whatever male politician was tagged and includes a fashion-critiquing quote that has been said about a female politician. The retweet alters the selected quote to masculine pronouns, in order to bring an awareness to how these sort of statements are traditionally used against women, but not men. The retweet also includes a link to the story the quote is from so that those who view the tweet can also see evidence of specific instances of female politicians being judged based on appearances</li>
                     <li>Visit Twitter page <a href="https://twitter.com/PolitFashion">here</a></li>
                     <li>Download JavaScript <a href="projects/TwitterBot.zip" download>here</a></li>
                     <li>Created for LMC 2700 (Intro to Computational Media)</li>
                 </ul>
-            <h2><div class="project">Journal Game</div><img src="images/OnlineGame3.PNG" width="1166" height="664" alt="Bullet Journal" class="extra"></h2>
+                <h2><div class="project">Journal Game</div><img src="images/OnlineGame3.PNG" width="1166" height="664" alt="Bullet Journal" class="extra"></h2>
                 <ul>
                     <li>Created using HTML, CSS, and JavaScript to tell a story that the user can fill in. The user plays as a boy by interacting with his bullet journal. Hovering over highlighted sections allows the player to view illustrations corresponding to the text. Clicking on blank underlined sections leads the player to a choice between two statements which can change the final outcome of the game.</li>
                     <li>GitHub link can be found <a href="https://github.com/KatieCarlson/LMC2700-Final-Game">here</a></li>
                     <li>Created for LMC 2700 (Intro to Computational Media)</li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Brainy-Bytes Platform Game</div><img src="images/game_maker.PNG" width="3010" height="2229" alt="Platform Game"></h2>
+                <br> <br>
+                <h2><div class="project">Brainy-Bytes Platform Game</div><img src="images/game_maker.PNG" width="3010" height="2229" alt="Platform Game"></h2>
                 <ul>
                     <li>Developed in GameMaker Studio 2 to inspire children while illustrating the goals of Brainy Bytes courses</li>
                     <li>Platform game with multiple levels complete with player attacks, enemies, power ups, and a boss level</li>
@@ -217,8 +247,8 @@
                     <li>Download executable <a href="projects/Platform_Game_Executable.zip" download>here</a> </li>
                     <li>Download GameMaker file <a href="projects/Platform_Game.zip" download>here</a> </li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Brainy Bytes Top Down Game</div><img src="images/top_down.PNG" width="1030" height="767" alt="Top Down Game"></h2>
+                <br> <br>
+                <h2><div class="project">Brainy Bytes Top Down Game</div><img src="images/top_down.PNG" width="1030" height="767" alt="Top Down Game"></h2>
                 <ul>
                     <li>Developed in GameMaker Studio 2 to inspire children while illustrating the goals of Brainy Bytes courses</li>
                     <li>Top down game with multiple levels in which the player throws attacks to defeat enemies</li>
@@ -226,8 +256,8 @@
                     <li>Download executable <a href="projects/Top_Down_Game_Executable.zip" download>here</a></li>
                     <li>Download GameMaker file <a href="projects/Top_Down_Game.zip" download>here</a></li>
                 </ul>
-            <br> <br>
-            <h2><div class="project">Brainy Bytes Space Odyssey Game</div><img src="images/Space_Odyssey.PNG" width="546" height="360" alt="Space Odyssey Game"></h2>
+                <br> <br>
+                <h2><div class="project">Brainy Bytes Space Odyssey Game</div><img src="images/Space_Odyssey.PNG" width="546" height="360" alt="Space Odyssey Game"></h2>
                 <ul>
                     <li>Developed in GameMaker 8.1 to inspire children while illustrating the goals of Brainy Bytes courses</li>
                     <li>Game in which the player flies through space attempting to keep their shield up while dodging asteroids</li>
@@ -235,8 +265,8 @@
                     <li>Download executable <a href="projects/space_odyssey.exe" download>here</a></li>
                     <li>Download GameMaker file <a href="projects/space_odyssey.gm81" download>here</a></li>
                 </ul>
-            <br><br>
-             <h2><div class="project">Brainy Bytes Fruit Basket Game</div><img src="images/Fruit_Basket.PNG" width="800" height="601" alt="Fruit Basket Game"></h2>
+                <br><br>
+                <h2><div class="project">Brainy Bytes Fruit Basket Game</div><img src="images/Fruit_Basket.PNG" width="800" height="601" alt="Fruit Basket Game"></h2>
                 <ul>
                     <li>Developed in GameMaker 8.1 to inspire children while illustrating the goals of Brainy Bytes courses</li>
                     <li>Game in which the player moves their basket stack across the screen to catch fruit; the number of baskets in the stack is the number of player lives</li>
@@ -244,8 +274,8 @@
                     <li>Download executable <a href="projects/fruit_basket.exe" download>here</a></li>
                     <li>Download GameMaker file <a href="projects/fruit_basket.gm81" download>here</a></li>
                 </ul>
-            <br><br>
-             <h2><div class="project">Brainy Bytes Run Run Game</div><img src="images/Run_Run.PNG" width="535" height="313" alt="Run Run Game"></h2>
+                <br><br>
+                <h2><div class="project">Brainy Bytes Run Run Game</div><img src="images/Run_Run.PNG" width="535" height="313" alt="Run Run Game"></h2>
                 <ul>
                     <li>Developed in GameMaker 8.1 to inspire children while illustrating the goals of Brainy Bytes courses</li>
                     <li>Game in which the player runs across the screen dodging obstacles</li>
@@ -253,8 +283,9 @@
                     <li>Download executable <a href="projects/run_run.exe" download>here</a></li>
                     <li>Download GameMaker file <a href="projects/run_run.gm81" download>here</a></li>
                 </ul>
-            <br><br>
+                <br><br>
         </article>
     </main>
 </body>
+</div>
 </html>

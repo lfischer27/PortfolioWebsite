@@ -1,3 +1,72 @@
+/*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+/*https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+
+/*https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: steelblue;
+  padding: 20px 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Style the header links */
+.header a {
+  float: none;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  /*  font-size: 35px;*/
+    font-size: 3.5em;
+  font-weight: bold;
+color: white;
+}
+
+/* Change the background color on mouse-over */
+.header a.logo:hover {
+  background-color: lightsteelblue;
+/*  color: black;*/
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: goldenrod;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: left;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/*
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+*/
+
+
 html, body {
     background-color: white;
 	margin: 0;
@@ -12,7 +81,8 @@ h1, h2 {
   background-color: goldenrod;
   color: white;
   padding: .7em;
-  font: .8em Georgia, "Times New Roman";
+  font: .8em Tahoma, Arial, sans-serif;
+/*    font: .8em Georgia, "Times New Roman";*/
   border: none;
   border-radius: .4em;
 }
@@ -36,7 +106,8 @@ h1, h2 {
   box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.2);
 /*sets stack order*/
   z-index: 1;
-  font: .8em Georgia, "Times New Roman";
+  font: .8em Tahoma, Arial, sans-serif;
+/*  font: .8em Georgia, "Times New Roman";*/
 }
 
 /*formats links in dropdown*/
@@ -46,12 +117,21 @@ h1, h2 {
   text-decoration: none;
 /*displays as block element*/
   display: block;
-  font-family: Georgia, "Times New Roman";
+  font-family: Tahoma, Arial, sans-serif;
+/*  font-family: Georgia, "Times New Roman";*/
 }
 
 /*when the user hovers over the dropdown options*/
 .dropdown-content a:hover {
     background-color: goldenrod;
+}
+
+a:link {
+    color: steelblue;
+}
+
+a:visited {
+    color: darkblue;
 }
 
 .dropdown-content a:link {
@@ -80,31 +160,112 @@ ul {
 }
 
 article {
-    font: 1.2em Georgia, "Times New Roman";
+    font: 1.2em Tahoma, Arial, sans-serif;
+/*    font: 1.2em Georgia, "Times New Roman";*/
 }
 
+/*
 body {
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	line-height: 1.8;
 }
+*/
+
+.bodyrepl {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 2.5% 5%;
+	line-height: 1.8;
+    margin-bottom: 2em;
+}
 
 h3 {
-    font: 1.2em Georgia, "Times New Roman";
+    font: 1.2em Tahoma, Arial, sans-serif;
+/*    font: 1.2em Georgia, "Times New Roman";*/
     font-weight: normal;
 }
 
 h2 {
     color: goldenrod;
-	font: 2.5em Georgia, "Times New Roman";
+    font: 2em Tahoma, Arial, sans-serif;
+/*	font: 2.5em Georgia, "Times New Roman";*/
 	margin-bottom: .4em;
 }
 
 h1 {
     color: steelblue;
-	font: 3.5em Georgia, "Times New Roman";
+    font: 3.5em Tahoma, Arial, sans-serif;
+/*	font: 3.5em Georgia, "Times New Roman";*/
 	margin-bottom: .2em;
 }
 
+
+/* The side navigation menu */
+.sidenav {
+  font-family: Tahoma, Arial, sans-serif;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Color change with hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+/*  color: white;*/
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.dropdownlink a:link {
+    text-align: left;
+}
+
+.menu {
+    color: white;
+}
+
 /*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/
+/*responsive menu refrence - https://www.w3schools.com/howto/howto_css_responsive_header.asp*/
+/*updated dropdown menu refrences*/
+/*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+/*https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp*/
+/*https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
