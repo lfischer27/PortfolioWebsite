@@ -288,6 +288,26 @@ a:visited {
     text-align: left;
 }
 
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 5px;
+}
+                
+.column2 {
+  float: left;
+  width: 35%;
+  padding: 5px;
+    text-align: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*
 .dropdown-content a:link {
     color: black;
