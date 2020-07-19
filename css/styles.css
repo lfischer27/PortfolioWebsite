@@ -13,7 +13,7 @@ height: 300px;
 /*keeps the image fixed (still, in one place) on the screen*/
   background-attachment: fixed;
 /*    centers the image*/
-  background-position: center;
+/*  background-position: center;*/
 /*    single image*/
   background-repeat: no-repeat;
 /*    fills the space*/
@@ -102,14 +102,16 @@ height: 300px;
 h1 {
     margin-top: 2em;
     text-emphasis: none;
+    text-align: center;
 }
 h2, h3, p {
     /*arial  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TAHOMA*/
 /*    font-family: Georgia, "Times New Roman";*/
     font-family: Tahoma, Arial, sans-serif;
+    
 }
 
-h3, p {
+p {
     margin-left: 3em;
 }
 
@@ -121,8 +123,7 @@ h2{
 }  
 
 h3 {
-    color: black;
-    font-size: 2em;
+    font-size: 2.5em;
 /*    font-weight: bold;*/
     color: goldenrod;
     text-align: center;
@@ -131,7 +132,7 @@ h3 {
 p {
     font-size: 1.2em;
     line-height: 1.5em;
-    text-align: medium;
+    text-align: left;
 }
 
 /*formats size, shape, and border of image*/
@@ -148,6 +149,7 @@ img {
 /*provides inner background to the text*/
 .content{
     margin-bottom: 6em;
+    text-align: center;
 }
 
 /*removes margins*/
@@ -224,6 +226,29 @@ a:visited {
 
 .menu {
     color: steelblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 65%;
+  padding: 5px;
+}
+                
+.column2 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*Parallax scrolling refrence https://www.w3schools.com/howto/howto_css_parallax.asp*/

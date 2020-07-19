@@ -89,8 +89,11 @@ h1, h2 {
 }
 
 .gallery {
+/*
     margin-left: 5em;
     margin-left: 3m;
+*/
+    text-align: center;
 }
 
 .gallery img {
