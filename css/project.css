@@ -326,6 +326,10 @@ a:visited {
   clear: both;
 }
 
+.wide {
+    padding-bottom: 1em;
+}
+
 /*
 .dropdown-content a:link {
     color: black;
