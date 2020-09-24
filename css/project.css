@@ -108,6 +108,11 @@ p {
     width: 40%;
 }
 
+.vid {
+/*    width: 100%;*/
+    text-align: left;
+}
+
 li {
 	margin-bottom: 1em;
     margin-right: 1.5em;
@@ -312,11 +317,11 @@ a:visited {
 
 .column1 {
   float: left;
-  width: 70%;
+  width: 60%;
 }
 .column2 {
   float: left;
-  width: 30%;
+  width: 40%;
 }
 
 /* Clear floats after the columns */
