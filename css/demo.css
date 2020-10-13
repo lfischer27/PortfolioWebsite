@@ -241,8 +241,6 @@ p {
     font-size: 1.2em;
     line-height: 1.5em;
     text-align: medium;
-    margin-left: 5em;
-    margin-right: 5em;
 }
 
 /*formats size, shape, and border of image*/
@@ -353,6 +351,10 @@ footer {
     color: white;
 }
 
+.maintext {
+    margin-left: 5em;
+    margin-right: 5em;
+}
 /*lightbox source code - https://github.com/lokesh/lightbox2*/
 /*Dropdown menu refrence - https://www.w3schools.com/howto/howto_css_dropdown.asp*/
 /*responsive menu refrence - https://www.w3schools.com/howto/howto_css_responsive_header.asp*/
